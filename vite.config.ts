@@ -11,6 +11,13 @@ export default defineConfig(({ mode }) => ({
     host: true,
     port: 8080,
     strictPort: false,
+    // Allow specific hostnames to access the dev server (helpful when using a forwarded or public dev hostname)
+    // Add the host reported by Vite as blocked to this list for local development. Be careful with production.
+    allowedHosts: [
+      'smart-facility-manager.onrender.com',
+      'localhost',
+      '127.0.0.1'
+    ],
     cors: true,
     proxy: {
       '/api': {
