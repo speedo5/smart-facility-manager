@@ -127,14 +127,7 @@ export default function Login() {
               </Button>
             </form>
 
-            {/* Demo Credentials */}
-            <div className="mt-6 p-4 bg-muted rounded-lg space-y-2">
-              <p className="text-sm font-medium text-muted-foreground">Demo Credentials:</p>
-              <div className="text-xs space-y-1">
-                <p><strong>Admin:</strong> admin@university.edu / admin123</p>
-                <p><strong>Student:</strong> student@university.edu / student123</p>
-              </div>
-            </div>
+          
 
             {/* Registration Link */}
             <div className="mt-4 text-center text-sm">
